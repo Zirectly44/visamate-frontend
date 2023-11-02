@@ -13,7 +13,24 @@ const meta = {
   tags: ["autodocs"],
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
-    backgroundColor: { control: "color" },
+    price: {
+      control: {
+        type: "range",
+        min: 0,
+        max: 1000,
+        step: 1,
+      },
+    },
+    countryName: {
+      control: {
+        type: "text",
+      },
+    },
+    url: {
+      control: {
+        type: "text",
+      },
+    },
   },
 } satisfies Meta<typeof CountryCard>;
 
@@ -21,8 +38,9 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
-  // args: {
-  //   primary: true,
-  //   label: 'Button',
-  // },
+  args: {
+    countryName: "United States of America",
+    price: 100,
+    url: "https://strapi-aws-s3-visamate.s3.ap-southeast-2.amazonaws.com/tajmahal_b6d6de7844.jpeg",
+  },
 };

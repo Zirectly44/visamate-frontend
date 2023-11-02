@@ -2,14 +2,23 @@ import Image from "next/image";
 import Dubai from "../../../images/dubai.png"
 import s from "./CountryCard.module.css";
 
-export default function CountryCard() {
+interface Props {
+  url: string;
+  countryName: string;
+  price: number;
+  width?: number; 
+}
+
+export default function CountryCard({ url, countryName, price }: Props) {
   return (
+    <div className="wrapper">
     <div className={s.CountryCardContainer}>
-      <Image src={Dubai} alt="Dubai" />
-      <div className={s.CountryCardText}>
-        <p>🇦🇪 United Arab Emirates</p>
-        <p>₹7,450</p>
-      </div>
+      {/* <Image src={url} alt="Dubai" width={`${width}rem`} height={200} /> */}
     </div>
+          <div className={s.CountryCardText}>
+          <p>🇦🇪 {countryName}</p>
+          <p>{price} $</p>
+        </div>
+        </div>
   );
 }

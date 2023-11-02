@@ -1,10 +1,14 @@
 .CountryCardContainer {
   height: 270px;
   width: 267px;
-  border-radius: 20px;
+  border-radius: 20px 20px 0px 0px;
   position: relative;
   display: flex;
   flex-direction: column;
+  background-image: url("https://strapi-aws-s3-visamate.s3.ap-southeast-2.amazonaws.com/tajmahal_b6d6de7844.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .CountryCardText {
