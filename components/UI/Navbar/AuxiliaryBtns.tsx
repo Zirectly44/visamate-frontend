@@ -1,15 +1,14 @@
 import s from "./AuxiliaryBtns.module.css";
-import { faUsers } from "@fortawesome/free-solid-svg-icons/faUsers";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons/faChevronDown";
+import LoginIcon from "@/components/Icons/LoginIcon";
+import ChevronDownIcon from "@/components/Icons/ChevronDownIcon";
 
 export default function AuxiliaryBtns() {
   return (
     <div className={s.container} style={{ borderColor: "white" }}>
       <button className={s.login}>
-        <FontAwesomeIcon className={s.userIcon} icon={faUsers} />
+        <LoginIcon className={s.userIcon} />
         Log in
-        <FontAwesomeIcon className={s.chevronDownIcon} icon={faChevronDown} />
+        <ChevronDownIcon className={s.chevronDownIcon} />
       </button>
       <button className={s.askforfree}>Ask for Free</button>
     </div>

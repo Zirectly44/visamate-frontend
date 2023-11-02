@@ -1,4 +1,16 @@
-const ResidencyIcon = ({ className = "", ...props }) => {
+import React from "react";
+
+interface ResidencyIconProps {
+  className?: string;
+  active?: boolean;
+  style?: {}
+}
+
+const ResidencyIcon: React.FC<ResidencyIconProps> = ({
+  className = "",
+  active = false,
+  style = {}
+}) => {
   return (
     <svg
       width="32"
@@ -7,13 +19,13 @@ const ResidencyIcon = ({ className = "", ...props }) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
-      {...props}
+      style={style}
     >
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M29.0465 25.424L18.5398 8.30005L13.8198 15.9934L11.0158 11.228L2.6665 25.4227H29.0465V25.424ZM17.7972 22.7574H24.2825L18.5398 13.3987L15.3505 18.596L17.7972 22.756V22.7574ZM14.7038 22.7574H7.32917L11.0158 16.488L14.7038 22.756V22.7574Z"
-        fill={props.active ? "#1A2B49" : "white"}
+        fill={active === true ? "#1A2B49" : "white"}
       />
     </svg>
   );
