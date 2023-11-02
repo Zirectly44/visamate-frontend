@@ -4,10 +4,10 @@ import Navbar from "@/components/UI/Navbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck } from "@fortawesome/free-regular-svg-icons";
 import Tourist from "./_tourist";
-import TravelIcon from "@/components/UI/Icons/TravelIcon";
-import BusinessIcon from "@/components/UI/Icons/BusinessIcon";
-import JobSeekerIcon from "@/components/UI/Icons/JobSeekerIcon";
-import ResidencyIcon from "@/components/UI/Icons/ResidencyIcon";
+import TravelIcon from "@/components/Icons/TravelIcon";
+import BusinessIcon from "@/components/Icons/BusinessIcon";
+import JobSeekerIcon from "@/components/Icons/JobSeekerIcon";
+import ResidencyIcon from "@/components/Icons/ResidencyIcon";
 import { useState } from "react";
 
 export default function Home() {
