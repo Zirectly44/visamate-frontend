@@ -1,95 +1,88 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+"use client";
+import s from "./page.module.css";
+import Navbar from "@/components/UI/Navbar";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleCheck } from "@fortawesome/free-regular-svg-icons";
+import Tourist from "./_tourist";
+import TravelIcon from "@/components/UI/Icons/TravelIcon";
+import BusinessIcon from "@/components/UI/Icons/BusinessIcon";
+import JobSeekerIcon from "@/components/UI/Icons/JobSeekerIcon";
+import ResidencyIcon from "@/components/UI/Icons/ResidencyIcon";
+import { useState } from "react";
 
 export default function Home() {
+  const [activePage, setActivePage] = useState(1);
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
+    <div>
+      <div className={s.navbar_margin}>
+        <Navbar />
         <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
+          <h1>
+            India’s Trusted <br /> Visa Platform
+          </h1>
+          <li>
+            <FontAwesomeIcon
+              icon={faCircleCheck}
+              className={s.circleCheckIcon}
             />
-          </a>
+            Fast Processing
+          </li>
+          <li>
+            <FontAwesomeIcon
+              icon={faCircleCheck}
+              className={s.circleCheckIcon}
+            />
+            Money Back Guarantee
+          </li>
+          <li>
+            <FontAwesomeIcon
+              icon={faCircleCheck}
+              className={s.circleCheckIcon}
+            />
+            Easy To Use
+          </li>
+          <li>
+            <FontAwesomeIcon
+              icon={faCircleCheck}
+              className={s.circleCheckIcon}
+            />
+            Top Notch Support
+          </li>
         </div>
       </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className={s.pageNavigator}>
+        <button
+          className={activePage === 1 ? s.activeButton : ""}
+          onClick={() => setActivePage(1)}
+        >
+          <TravelIcon active={activePage === 1} style={{ marginRight: 6 }} />
+          Tourist
+        </button>
+        <button
+          className={activePage === 2 ? s.activeButton : ""}
+          onClick={() => setActivePage(2)}
+        >
+          <BusinessIcon active={activePage === 2} style={{ marginRight: 6 }} />
+          Business
+        </button>
+        <button
+          className={activePage === 3 ? s.activeButton : ""}
+          onClick={() => setActivePage(3)}
+        >
+          <JobSeekerIcon active={activePage === 3} style={{ marginRight: 6 }} />
+          Job Seeker
+        </button>
+        <button
+          className={activePage === 4 ? s.activeButton : ""}
+          onClick={() => setActivePage(4)}
+        >
+          <ResidencyIcon active={activePage === 4} style={{ marginRight: 6 }} />
+          Residency
+        </button>
       </div>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+      <Tourist />
+    </div>
+  );
 }
