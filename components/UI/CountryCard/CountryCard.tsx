@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Dubai from "@/images/dubai.png";
+import Dubai from "../../../images/dubai.png"
 import s from "./CountryCard.module.css";
 
 export default function CountryCard() {
