@@ -43,28 +43,28 @@ export default function Home() {
           className={activePage === 1 ? s.activeButton : ""}
           onClick={() => setActivePage(1)}
         >
-          <TravelIcon active={activePage === 1} style={{ marginRight:46 }} />
+          <TravelIcon active={activePage === 1} style={{ marginRight:6 }} />
           Tourist
         </button>
         <button
           className={activePage === 2 ? s.activeButton : ""}
           onClick={() => setActivePage(2)}
         >
-          <BusinessIcon active={activePage === 2} style={{ marginRight:46 }} />
+          <BusinessIcon active={activePage === 2} style={{ marginRight:6 }} />
           Business
         </button>
         <button
           className={activePage === 3 ? s.activeButton : ""}
           onClick={() => setActivePage(3)}
         >
-          <JobSeekerIcon active={activePage === 3} style={{ marginRight:46 }} />
+          <JobSeekerIcon active={activePage === 3} style={{ marginRight:6 }} />
           Job Seeker
         </button>
         <button
           className={activePage === 4 ? s.activeButton : ""}
           onClick={() => setActivePage(4)}
         >
-          <ResidencyIcon active={activePage === 4} style={{ marginRight:46 }} />
+          <ResidencyIcon active={activePage === 4} style={{ marginRight:6 }} />
           Residency
         </button>
       </div>
