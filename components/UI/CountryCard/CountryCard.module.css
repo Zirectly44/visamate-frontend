@@ -5,10 +5,10 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  background-image: url("https://strapi-aws-s3-visamate.s3.ap-southeast-2.amazonaws.com/tajmahal_b6d6de7844.jpeg");
-  background-size: cover;
+  /* background-image: url("https://strapi-aws-s3-visamate.s3.ap-southeast-2.amazonaws.com/tajmahal_b6d6de7844.jpeg"); */
+  /* background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 
 .CountryCardText {
@@ -32,4 +32,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 28px; /* 186.667% */
+}
+.ImageStyle {
+  border-radius: 20px 20px 0px 0px; /* Example styles; adjust as needed */
 }

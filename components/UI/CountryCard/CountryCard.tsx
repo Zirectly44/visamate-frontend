@@ -8,17 +8,23 @@ interface Props {
   price: number;
   width?: number; 
 }
+function remToPixels(rem: number): number {
+  return rem * parseFloat(getComputedStyle(document.documentElement).fontSize);
+}
 
 export default function CountryCard({ url, countryName, price }: Props) {
+  const widthInPixels = remToPixels(200);
+  const heightInPixels = remToPixels(200);
   return (
-    <div className="wrapper">
+
     <div className={s.CountryCardContainer}>
-      {/* <Image src={url} alt="Dubai" width={`${width}rem`} height={200} /> */}
-    </div>
-          <div className={s.CountryCardText}>
+      <Image src={url} alt="Dubai" width={266.8} height={270} className={s.ImageStyle}/>
+      <div className={s.CountryCardText}>
           <p>🇦🇪 {countryName}</p>
           <p>{price} $</p>
         </div>
-        </div>
+    </div>
+   
+    
   );
 }
