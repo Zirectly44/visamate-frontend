@@ -2,9 +2,19 @@
   height: 270px;
   width: 267px;
   border-radius: 20px;
-  position: relative;
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+.CountryCardContainer p.geton{
+  font-size: 12px; 
+  padding: 1.5px 9px 1.5px 9px;
+  border-radius: 2px;
+  position: absolute;
+  bottom: 0;
+  background-color: #00AEFF;
+  color: white;
 }
 
 .CountryCardText {
@@ -28,4 +38,5 @@
   font-style: normal;
   font-weight: 600;
   line-height: 28px; /* 186.667% */
+  position: relative;
 }

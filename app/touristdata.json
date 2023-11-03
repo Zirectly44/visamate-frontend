@@ -1,0 +1,158 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "attributes": {
+                "createdAt": "2023-10-31T06:12:14.994Z",
+                "updatedAt": "2023-11-01T07:48:47.316Z",
+                "publishedAt": "2023-10-31T06:12:18.606Z",
+                "ProcessingTime": 48,
+                "price": 240,
+                "validity": 80,
+                "visaType": "Sticker",
+                "Details": "This is visa for agra",
+                "Continent": "Asia",
+                "cardBanner": {
+                    "data": {
+                        "id": 3,
+                        "attributes": {
+                            "name": "tajmahal.jpeg",
+                            "alternativeText": null,
+                            "caption": null,
+                            "width": 284,
+                            "height": 177,
+                            "formats": {
+                                "thumbnail": {
+                                    "name": "thumbnail_tajmahal.jpeg",
+                                    "hash": "thumbnail_tajmahal_553d6c458f",
+                                    "ext": ".jpeg",
+                                    "mime": "image/jpeg",
+                                    "path": null,
+                                    "width": 245,
+                                    "height": 153,
+                                    "size": 9.22,
+                                    "url": "/uploads/thumbnail_tajmahal_553d6c458f.jpeg"
+                                }
+                            },
+                            "hash": "tajmahal_553d6c458f",
+                            "ext": ".jpeg",
+                            "mime": "image/jpeg",
+                            "size": 8.19,
+                            "url": "/uploads/tajmahal_553d6c458f.jpeg",
+                            "previewUrl": null,
+                            "provider": "local",
+                            "provider_metadata": null,
+                            "createdAt": "2023-10-31T06:10:31.628Z",
+                            "updatedAt": "2023-10-31T06:11:28.758Z"
+                        }
+                    }
+                },
+                "faqs": {
+                    "data": [
+                        {
+                            "id": 1,
+                            "attributes": {
+                                "question": "What's the process of verification.",
+                                "answer": "It will be done by us.",
+                                "createdAt": "2023-10-31T12:44:35.365Z",
+                                "updatedAt": "2023-10-31T12:44:40.405Z",
+                                "publishedAt": "2023-10-31T12:44:40.402Z"
+                            }
+                        },
+                        {
+                            "id": 2,
+                            "attributes": {
+                                "question": "some random question",
+                                "answer": "some random answer",
+                                "createdAt": "2023-10-31T12:47:06.890Z",
+                                "updatedAt": "2023-10-31T12:47:11.218Z",
+                                "publishedAt": "2023-10-31T12:47:11.216Z"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": 2,
+            "attributes": {
+                "createdAt": "2023-10-31T06:13:25.548Z",
+                "updatedAt": "2023-10-31T12:56:20.671Z",
+                "publishedAt": "2023-10-31T06:13:27.935Z",
+                "ProcessingTime": 24,
+                "price": 340,
+                "validity": 75,
+                "visaType": "Sticker",
+                "Details": "This is visa for xyz.",
+                "Continent": "South-America",
+                "cardBanner": {
+                    "data": {
+                        "id": 2,
+                        "attributes": {
+                            "name": "leaningtower.jpeg",
+                            "alternativeText": null,
+                            "caption": null,
+                            "width": 259,
+                            "height": 194,
+                            "formats": {
+                                "thumbnail": {
+                                    "name": "thumbnail_leaningtower.jpeg",
+                                    "hash": "thumbnail_leaningtower_4d44a7d58d",
+                                    "ext": ".jpeg",
+                                    "mime": "image/jpeg",
+                                    "path": null,
+                                    "width": 208,
+                                    "height": 156,
+                                    "size": 8.65,
+                                    "url": "/uploads/thumbnail_leaningtower_4d44a7d58d.jpeg"
+                                }
+                            },
+                            "hash": "leaningtower_4d44a7d58d",
+                            "ext": ".jpeg",
+                            "mime": "image/jpeg",
+                            "size": 10.57,
+                            "url": "/uploads/leaningtower_4d44a7d58d.jpeg",
+                            "previewUrl": null,
+                            "provider": "local",
+                            "provider_metadata": null,
+                            "createdAt": "2023-10-31T06:10:31.625Z",
+                            "updatedAt": "2023-10-31T06:12:40.184Z"
+                        }
+                    }
+                },
+                "faqs": {
+                    "data": [
+                        {
+                            "id": 2,
+                            "attributes": {
+                                "question": "some random question",
+                                "answer": "some random answer",
+                                "createdAt": "2023-10-31T12:47:06.890Z",
+                                "updatedAt": "2023-10-31T12:47:11.218Z",
+                                "publishedAt": "2023-10-31T12:47:11.216Z"
+                            }
+                        },
+                        {
+                            "id": 1,
+                            "attributes": {
+                                "question": "What's the process of verification.",
+                                "answer": "It will be done by us.",
+                                "createdAt": "2023-10-31T12:44:35.365Z",
+                                "updatedAt": "2023-10-31T12:44:40.405Z",
+                                "publishedAt": "2023-10-31T12:44:40.402Z"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "meta": {
+        "pagination": {
+            "page": 1,
+            "pageSize": 25,
+            "pageCount": 1,
+            "total": 2
+        }
+    }
+}

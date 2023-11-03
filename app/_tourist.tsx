@@ -1,9 +1,27 @@
+"use client;";
+
 import CountryCard from "@/components/UI/CountryCard/CountryCard";
 import s from "./_tourist.module.css";
 import Image from "next/image";
 import heroImg from "@/images/heroimg.png";
+import { useState, useEffect } from "react";
+import touristdata from "./touristdata.json";
 
 export default function Tourist() {
+  // const [data, setData] = useState([]);
+  // console.log(touristdata)
+
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     // const response = await fetch('./data.json'); // Fetch the JSON file from the public directory
+  //     // const jsonData = await response.json();
+  //     // setData();
+  //     console.log(data);
+  //   };
+
+  //   fetchData();
+  // }, []); // Empty dependency array ensures the effect runs once after the initial render
+
   return (
     <div>
       <div className={s.imgContainer}>
@@ -21,10 +39,20 @@ export default function Tourist() {
           <button>Middle East</button>
         </div>
         <div className={s.CountryCardGrid}>
+          {/* <CountryCard />
           <CountryCard />
           <CountryCard />
-          <CountryCard />
-          <CountryCard />
+          <CountryCard /> */}
+          {touristdata.data.map((item) => (
+            <CountryCard
+              key={item.id}
+              processingTime={item.attributes.ProcessingTime}
+              imageUrl={item.attributes.cardBanner.data.attributes.url}
+              countryName={item.attributes.visaType}
+              countryFlag={item.attributes.cardBanner.data.attributes.name}
+              price={item.attributes.price}
+            />
+          ))}
         </div>
       </div>
     </div>
