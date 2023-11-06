@@ -1,9 +1,9 @@
-"use client;";
+"use client";
 
 import CountryCard from "@/components/UI/CountryCard/CountryCard";
 import s from "./_tourist.module.css";
 import Image from "next/image";
-import heroImg from "@/images/heroimg.png";
+import heroImg from "@/assets/LandingPage/heroimg.png";
 import { useState, useEffect } from "react";
 import touristdata from "./touristdata.json";
 
@@ -29,7 +29,7 @@ export default function Tourist() {
       </div>
       <div className={s.wrapper}>
         <h2>Tourist Visas Around the World</h2>
-        <div className={s.continents}>
+        {/* <div className={s.continents}>
           <button>Asia</button>
           <button>Europe</button>
           <button>Latin America</button>
@@ -37,12 +37,8 @@ export default function Tourist() {
           <button>Oceania</button>
           <button>Africa</button>
           <button>Middle East</button>
-        </div>
+        </div> */}
         <div className={s.CountryCardGrid}>
-          {/* <CountryCard />
-          <CountryCard />
-          <CountryCard />
-          <CountryCard /> */}
           {touristdata.data.map((item) => (
             <CountryCard
               key={item.id}

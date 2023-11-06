@@ -1,0 +1,51 @@
+.whyus{
+   width: 100%;
+}
+
+.whyus h1{
+    line-height: 1.1;
+    color: #232B3E;
+    font-size: 3.33em;
+}
+
+.whyus p{
+    color: #808080;
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 1.67;
+    margin-bottom: 24px;
+}
+
+.competitors {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 16px;
+    margin-top: 12px;
+    border: 2px solid black;
+    padding: 24px;
+}
+
+.competitors > .item{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 12px 10px 12px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item > div{
+    display: flex;
+    align-items: center;
+}
+
+.item > div > p {
+    display: inline;
+    font-size: 18px;
+    color: black;
+}
+
+.item > p{
+    font-size: 18px;
+    color: #A8A8A8;
+}

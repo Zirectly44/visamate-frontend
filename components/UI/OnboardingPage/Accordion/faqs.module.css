@@ -1,0 +1,54 @@
+.mainTitle {
+  font-size: 3.33em;
+  color: #232B3E;
+  margin-bottom: 32px;
+}
+
+.accordionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: flex-start;
+  padding: 24px;
+  /* width: 600px; */
+  font-size: 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 1px solid #f0f0f0;
+  background-color: #fff;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.04);
+}
+
+.columnContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  cursor: pointer;
+  font-size: 18px; 
+}
+
+.columnContainer:hover {
+  background-color: var(--gh-blue-1);
+  width: 100%;
+}
+
+.textContainer {
+  max-height: 350px;
+  font-size: 16px; 
+  opacity: 1;
+  animation-name: textanimate;
+  animation-duration: 1s;
+  color: #909090; 
+  margin-top: 15px;
+}
+
+@keyframes textanimate {
+  0% {
+    opacity: 0;
+    max-height: 15px;
+  }
+  100% {
+    opacity: 1;
+    max-height: 350px;
+  }
+}

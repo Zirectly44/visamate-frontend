@@ -1,0 +1,28 @@
+.wrapper {
+  position: relative;
+  /* width: 49.51rem; */
+  /* height: 31em; */
+  border-radius: 20px;
+  width: 100%;
+}
+
+.wrapperText{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    z-index: 10;
+}
+
+.wrapperText h1{
+    font-size: 5em;
+    line-height: 1.21;
+    color: white;
+}
+
+.wrapperText p{
+    font-size: 3.33em;
+    color: #CBD5E1;
+}
+
+

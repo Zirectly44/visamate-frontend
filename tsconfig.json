@@ -22,6 +22,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/UI/OnboardingPage/Accordion/App.jsx", "components/UI/OnboardingPage/Accordion/Header.jsx"],
   "exclude": ["node_modules"]
 }

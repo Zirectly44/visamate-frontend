@@ -1,0 +1,36 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "Airbnb",
+            "numberOfDays": 10,
+            "height": 40,
+            "width": 40,
+            "logoUrl": "Images/Competitors/Airbnb.png"
+        },
+        {
+            "id": 2,
+            "name": "Logo",
+            "numberOfDays": 2,
+            "height": 22,
+            "width": 80,
+            "logoUrl": "Images/Competitors/LOGO.png"
+        },
+        {
+            "id": 3,
+            "name": "Musafir",
+            "numberOfDays": 10,
+            "height": 27,
+            "width": 90,
+            "logoUrl": "Images/Competitors/Musafir.png"
+        },
+        {
+            "id": 4,
+            "name": "Yatra",
+            "numberOfDays": 10,
+            "height": 57,
+            "width": 25,
+            "logoUrl": "Images/Competitors/yatra.png"
+        }
+    ]
+}
