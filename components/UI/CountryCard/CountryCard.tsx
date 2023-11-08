@@ -20,8 +20,8 @@ export default function CountryCard({
 }: CountryCardProps) {
   return (
     <div className={s.CountryCardContainer}>
+      <Image src={Dubai} alt="Dubai" layout="responsive" />
       <p className={s.geton}>Get on {processingTime}</p>
-      <Image src={Dubai} alt="Dubai" />
       <div className={s.CountryCardText}>
         <p>{countryFlag} {countryName}</p>
         <p>₹{price}</p>

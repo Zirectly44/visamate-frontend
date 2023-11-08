@@ -1,0 +1,68 @@
+.container {
+  border-radius: 18px;
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  display: inline-flex;
+  padding: 40px 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.container > li {
+  font-size: 14.875px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 134.454% */
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.HeadsetIconContainer {
+  display: flex;
+  width: 40px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 41.667px;
+  background: var(--primary-purple, #934fff);
+  margin-right: 4px;
+}
+
+.ClockClockwiseIconContainer {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding: 4.853px 4.658px 5.147px 5.342px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 41.667px;
+  background: var(--primary-purple, #934fff);
+  margin-right: 4px;
+}
+
+.ShieldCheckIconContainer {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 41.667px;
+  background: var(--primary-purple, #934fff);
+  margin-right: 4px;
+}
+
+.StarIconContainer {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 41.667px;
+  background: var(--primary-purple, #934fff);
+  margin-right: 4px;
+}

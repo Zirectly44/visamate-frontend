@@ -1,0 +1,24 @@
+.trustedHeading {
+  color: #fff;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  font-size: 4.44em;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 3.84px;
+}
+
+.askForFree {
+  border-radius: 9px;
+  background: linear-gradient(91deg, #f09b1b -13.13%, #f5f575 118.55%);
+  display: flex;
+  padding: 12px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 24px; /* 133.333% */
+  border: none;
+}
